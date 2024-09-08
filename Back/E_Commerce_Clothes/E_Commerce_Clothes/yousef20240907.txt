@@ -1,0 +1,376 @@
+2024-09-07 19:20:45.656 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 19:20:45.867 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 19:20:45.868 +03:00 [INF] Hosting environment: Development
+2024-09-07 19:20:45.868 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project-7\Back\E_Commerce_Clothes\E_Commerce_Clothes
+2024-09-07 19:20:45.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/swagger/index.html - null null
+2024-09-07 19:20:46.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 19:20:46.166 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/swagger/index.html - 200 null text/html;charset=utf-8 244.8316ms
+2024-09-07 19:20:46.176 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.4837ms
+2024-09-07 19:20:46.181 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/_vs/browserLink - null null
+2024-09-07 19:20:46.219 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.9201ms
+2024-09-07 19:20:46.252 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/swagger/v1/swagger.json - null null
+2024-09-07 19:20:46.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.253ms
+2024-09-07 19:21:02.339 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/register - multipart/form-data; boundary=----WebKitFormBoundary3jvpOENYWBjfahkb 450
+2024-09-07 19:21:02.352 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:21:02.352 +03:00 [INF] Request origin https://localhost:44319 does not have permission to access the resource.
+2024-09-07 19:21:02.353 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:21:02.353 +03:00 [INF] Request origin https://localhost:44319 does not have permission to access the resource.
+2024-09-07 19:21:02.416 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Register (E_Commerce_Clothes)'
+2024-09-07 19:21:02.433 +03:00 [INF] Route matched with {action = "Register", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(E_Commerce_Clothes.DTO.UserHashDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:21:03.572 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255) (DbType = AnsiString), @p2='?' (Size = 4000), @p3='?' (Size = 255), @p4='?' (Size = 255), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 8000) (DbType = Binary), @p7='?' (Size = 20) (DbType = AnsiString), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([address], [email], [image], [name], [password], [passwordHash], [passwordSalt], [phone_number], [points])
+OUTPUT INSERTED.[user_id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2024-09-07 19:21:03.601 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_Clothes.Models.User'.
+2024-09-07 19:21:03.625 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Register (E_Commerce_Clothes) in 1189.126ms
+2024-09-07 19:21:03.625 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Register (E_Commerce_Clothes)'
+2024-09-07 19:21:03.631 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/register - 200 null application/json; charset=utf-8 1292.1475ms
+2024-09-07 19:23:56.195 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 19:23:56.335 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 19:23:56.335 +03:00 [INF] Hosting environment: Development
+2024-09-07 19:23:56.339 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project-7\Back\E_Commerce_Clothes\E_Commerce_Clothes
+2024-09-07 19:23:56.356 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/swagger/index.html - null null
+2024-09-07 19:23:56.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 19:23:56.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/_vs/browserLink - null null
+2024-09-07 19:23:56.538 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/swagger/index.html - 200 null text/html;charset=utf-8 184.8284ms
+2024-09-07 19:23:56.543 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 5.1178ms
+2024-09-07 19:23:56.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.1113ms
+2024-09-07 19:23:56.614 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/swagger/v1/swagger.json - null null
+2024-09-07 19:23:56.712 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 95.7387ms
+2024-09-07 19:24:22.870 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/register - multipart/form-data; boundary=----WebKitFormBoundaryhS3R1xU5Nlc2XZk3 447
+2024-09-07 19:24:22.879 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:24:22.879 +03:00 [INF] Request origin https://localhost:44319 does not have permission to access the resource.
+2024-09-07 19:24:22.926 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Register (E_Commerce_Clothes)'
+2024-09-07 19:24:22.938 +03:00 [INF] Route matched with {action = "Register", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(E_Commerce_Clothes.DTO.UserHashDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:24:23.884 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255) (DbType = AnsiString), @p2='?' (Size = 4000), @p3='?' (Size = 255), @p4='?' (Size = 255), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 8000) (DbType = Binary), @p7='?' (Size = 20) (DbType = AnsiString), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([address], [email], [image], [name], [password], [passwordHash], [passwordSalt], [phone_number], [points])
+OUTPUT INSERTED.[user_id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2024-09-07 19:24:23.922 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce_Clothes.Models.User'.
+2024-09-07 19:24:23.949 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Register (E_Commerce_Clothes) in 1008.8958ms
+2024-09-07 19:24:23.950 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Register (E_Commerce_Clothes)'
+2024-09-07 19:24:23.955 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/register - 200 null application/json; charset=utf-8 1085.1517ms
+2024-09-07 19:24:45.175 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryAnzBorTVPLAy0tAH 246
+2024-09-07 19:24:45.176 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:24:45.176 +03:00 [INF] Request origin https://localhost:44319 does not have permission to access the resource.
+2024-09-07 19:24:45.182 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:24:45.206 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:24:45.422 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:26:46.760 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 19:26:46.892 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 19:26:46.896 +03:00 [INF] Hosting environment: Development
+2024-09-07 19:26:46.897 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project-7\Back\E_Commerce_Clothes\E_Commerce_Clothes
+2024-09-07 19:26:46.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/swagger/index.html - null null
+2024-09-07 19:26:47.121 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/swagger/index.html - 200 null text/html;charset=utf-8 205.8806ms
+2024-09-07 19:26:47.128 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/_vs/browserLink - null null
+2024-09-07 19:26:47.129 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 19:26:47.137 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 5.4771ms
+2024-09-07 19:26:47.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.0949ms
+2024-09-07 19:26:47.207 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44319/swagger/v1/swagger.json - null null
+2024-09-07 19:26:47.301 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44319/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.0049ms
+2024-09-07 19:26:59.980 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryRAcp4HmAJZ7l6zqA 246
+2024-09-07 19:26:59.984 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:26:59.985 +03:00 [INF] Request origin https://localhost:44319 does not have permission to access the resource.
+2024-09-07 19:27:00.062 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:27:00.073 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:27:01.106 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:27:01.186 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:27:01.195 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 1119.3948ms
+2024-09-07 19:27:01.196 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:27:01.204 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 1224.6372ms
+2024-09-07 19:32:08.034 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryHWFNAr3a55F4bYY1 246
+2024-09-07 19:32:08.035 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:08.035 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:08.040 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:08.040 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:08.079 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:08.080 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:08.081 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 40.1552ms
+2024-09-07 19:32:08.081 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:08.081 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 47.3221ms
+2024-09-07 19:32:09.790 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryDUfFa1p7Hpl4mqKK 246
+2024-09-07 19:32:09.790 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:09.790 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:09.792 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:09.792 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:09.828 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:09.829 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:09.829 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 37.6524ms
+2024-09-07 19:32:09.830 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:09.830 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 40.1274ms
+2024-09-07 19:32:09.956 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryAJInNVq88ES11qmS 246
+2024-09-07 19:32:09.957 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:09.957 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:09.957 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:09.957 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:09.959 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:09.960 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:09.960 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.9932ms
+2024-09-07 19:32:09.960 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:09.960 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.9306ms
+2024-09-07 19:32:10.136 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundary7KDCi7HNyMRAEsic 246
+2024-09-07 19:32:10.136 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:10.137 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:10.137 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:10.137 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:10.139 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:10.139 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:10.140 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.8974ms
+2024-09-07 19:32:10.140 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:10.140 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 4.0047ms
+2024-09-07 19:32:10.446 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryUUaneOA2oMLPFP5A 246
+2024-09-07 19:32:10.446 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:10.446 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:10.446 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:10.446 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:10.448 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:10.449 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:10.449 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.7357ms
+2024-09-07 19:32:10.449 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:10.449 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.7235ms
+2024-09-07 19:32:10.692 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryDvwo4YotXfnnBsQp 246
+2024-09-07 19:32:10.693 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:10.693 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:10.693 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:10.693 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:10.696 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:10.696 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:10.697 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 3.9213ms
+2024-09-07 19:32:10.697 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:10.697 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 4.9844ms
+2024-09-07 19:32:11.061 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryfeaFfxUMh5i7JVHB 246
+2024-09-07 19:32:11.061 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:11.061 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:11.061 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.061 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:11.063 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:11.064 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:11.065 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 3.2986ms
+2024-09-07 19:32:11.065 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.065 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 4.2481ms
+2024-09-07 19:32:11.221 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryFh7uyyA7Ab2ngHQf 246
+2024-09-07 19:32:11.221 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:11.221 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:11.221 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.221 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:11.223 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:11.224 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:11.224 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 3.1329ms
+2024-09-07 19:32:11.224 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.224 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.8936ms
+2024-09-07 19:32:11.380 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryY7wQWY8i31KHXsr9 246
+2024-09-07 19:32:11.381 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:11.381 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:11.381 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.381 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:11.383 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:11.383 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:11.384 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.9979ms
+2024-09-07 19:32:11.384 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.384 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.8809ms
+2024-09-07 19:32:11.532 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryygI7ANNAEzhZsdSJ 246
+2024-09-07 19:32:11.532 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:11.532 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:11.533 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.533 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:11.534 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:11.535 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:11.535 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.5614ms
+2024-09-07 19:32:11.535 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.535 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.2348ms
+2024-09-07 19:32:11.668 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryzqRAzlVBVtUvB8F3 246
+2024-09-07 19:32:11.669 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:11.669 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:11.669 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.669 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:11.671 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:11.672 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:11.672 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 3.1867ms
+2024-09-07 19:32:11.672 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.672 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.9426ms
+2024-09-07 19:32:11.837 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundarymKSw9ANIDDZsBAqU 246
+2024-09-07 19:32:11.837 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:11.837 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:11.837 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.837 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:11.839 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:11.840 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:11.840 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 3.2797ms
+2024-09-07 19:32:11.840 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:11.841 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 4.0514ms
+2024-09-07 19:32:12.062 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryaFFptKmVqZeAGKPc 246
+2024-09-07 19:32:12.062 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:12.062 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:12.062 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.063 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:12.064 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:12.064 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:12.065 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.5007ms
+2024-09-07 19:32:12.065 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.065 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.1955ms
+2024-09-07 19:32:12.245 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundarywF15GXDuveQcfgun 246
+2024-09-07 19:32:12.246 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:12.246 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:12.246 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.246 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:12.249 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:12.249 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:12.249 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 3.2403ms
+2024-09-07 19:32:12.249 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.250 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 4.1219ms
+2024-09-07 19:32:12.476 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryGDzFy4zSO320W6to 246
+2024-09-07 19:32:12.477 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:12.477 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:12.477 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.477 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:12.479 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:12.479 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:12.480 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.7803ms
+2024-09-07 19:32:12.480 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.480 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.8029ms
+2024-09-07 19:32:12.710 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundary9z8YfGQH2hWzrDDb 246
+2024-09-07 19:32:12.710 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:12.710 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:12.711 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.711 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:12.712 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:12.713 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:12.713 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.2685ms
+2024-09-07 19:32:12.713 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.713 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 2.9009ms
+2024-09-07 19:32:12.925 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryMRi9DgmAyUP5nW7o 246
+2024-09-07 19:32:12.925 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:12.925 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:12.925 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.925 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:12.927 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:12.927 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:12.928 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.5788ms
+2024-09-07 19:32:12.928 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:12.928 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.1073ms
+2024-09-07 19:32:13.093 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryZL0xy2oYL38ediEo 246
+2024-09-07 19:32:13.093 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:13.093 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:13.093 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:13.093 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:13.095 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:13.095 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:13.096 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.7417ms
+2024-09-07 19:32:13.096 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:13.096 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.3859ms
+2024-09-07 19:32:13.245 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryFBCz4BLgLlPlsZh0 246
+2024-09-07 19:32:13.245 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:13.245 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:13.245 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:13.245 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:13.247 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:13.247 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:13.248 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.412ms
+2024-09-07 19:32:13.248 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:13.248 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.0598ms
+2024-09-07 19:32:13.389 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundarySuq8Flu0uCWi2ZWJ 246
+2024-09-07 19:32:13.389 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:13.389 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:13.389 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:13.389 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:13.391 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:13.392 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:13.392 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.8619ms
+2024-09-07 19:32:13.392 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:13.392 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.7993ms
+2024-09-07 19:32:16.893 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundary0eKLx5LpFzkkhim6 246
+2024-09-07 19:32:16.893 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:16.893 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:16.893 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:16.893 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:16.895 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:16.895 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:16.895 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.278ms
+2024-09-07 19:32:16.896 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:16.896 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 2.8715ms
+2024-09-07 19:32:17.173 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44319/api/Users/login - multipart/form-data; boundary=----WebKitFormBoundaryvaKbqDb4CWivnnR0 246
+2024-09-07 19:32:17.173 +03:00 [INF] CORS policy execution failed.
+2024-09-07 19:32:17.173 +03:00 [INF] Request origin http://127.0.0.1:5502 does not have permission to access the resource.
+2024-09-07 19:32:17.173 +03:00 [INF] Executing endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:17.173 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(E_Commerce_Clothes.DTO.LoginDTO) on controller E_Commerce_Clothes.Controllers.UsersController (E_Commerce_Clothes).
+2024-09-07 19:32:17.175 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password], [u].[passwordHash], [u].[passwordSalt], [u].[phone_number], [u].[points]
+FROM [Users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 19:32:17.176 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-07 19:32:17.176 +03:00 [INF] Executed action E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes) in 2.421ms
+2024-09-07 19:32:17.176 +03:00 [INF] Executed endpoint 'E_Commerce_Clothes.Controllers.UsersController.Login (E_Commerce_Clothes)'
+2024-09-07 19:32:17.176 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44319/api/Users/login - 200 null application/json; charset=utf-8 3.0371ms
